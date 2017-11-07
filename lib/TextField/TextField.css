@@ -84,6 +84,9 @@
     background-color: #ebebe4;
     color: #777;
   }
+  &.marginBottom0 {
+    margin-bottom: 0;
+  }
 }
 
 .textFieldFeedback{

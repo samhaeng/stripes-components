@@ -68,6 +68,10 @@
     border-width: 0;
   }
   
+  &.marginBottom0{
+    margin-bottom: 0;
+  }
+
   &.textFieldHasFeedback{
     margin-bottom: .4rem;
   }

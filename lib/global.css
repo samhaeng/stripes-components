@@ -36,6 +36,10 @@ select {
   font-size: inherit;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 h1 {
   font-size: 1.9rem;
 }

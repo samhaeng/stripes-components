@@ -22,6 +22,10 @@
     }
   }
 
+  &.hovered {
+    background-color: #efefef;
+  }
+
   &.inline {
     display: inline;
 
@@ -29,30 +33,17 @@
       margin-bottom: 4px;
     }
   }
-
-  &.checkboxHasFeedback {
-    margin-bottom: 0;
-  }
-
-  &.hovered {
-    background-color: #efefef;
-  }
 }
 
 .checkboxLabel {
   cursor: pointer;
   flex-grow: 2;
   padding: 4px 2px;
-  margin: 0 4px;
   font-weight: 600;
   color: var(--labelColor);
 
   &:hover {
     opacity: 0.8;
-  }
-
-  &.error {
-    color: var(--error);
   }
 }
 
@@ -61,10 +52,6 @@
   font-weight: bold;
   text-transform: Uppercase;
   color: var(--labelColor);
-
-  &.error {
-    color: var(--error);
-  }
 }
 
 /* fix for shrinkage issues with checkbox as a flex-child */
@@ -72,18 +59,26 @@
   min-width: 16px;
 }
 
+/**
+ * Checkbox feedback
+ */
+.root {
+  &.hasWarning .checkboxFeedback {
+    color: var(--warn);
+  }
+
+  &.hasError .checkboxFeedback {
+    color: var(--error);
+  }
+}
+
 .checkboxFeedback {
-  display: block;
-  padding: 0 0.4rem;
-  margin-bottom: var(--controlMarginBottom);
+  margin-top: 2px;
 }
 
-.checkboxWarning {
-  composes: checkboxFeedback;
-  color: #e27c3e;
-  font-weight: 700;
-}
-
+/**
+ * Custom input styling
+ */
 input[type=checkbox].checkboxInput {
   margin: 0 9px;
   margin-bottom: 2px;

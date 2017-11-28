@@ -15,7 +15,8 @@
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
   background-color: transparent;
   border: transparent;
-  margin-bottom: var(--controlMarginBottom);
+
+  /* margin-bottom: var(--controlMarginBottom); */
   margin-left: 2px;
   margin-right: 2px;
   max-height: var(--controlHeight);
@@ -28,6 +29,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  outline: 0;
 
   &.slim {
     padding: 5px 2px;
@@ -46,7 +48,6 @@
   }
 
   &:focus {
-    outline: none;
     transition: box-shadow 0.3s ease-out;
     backface-visibility: hidden;
   }

@@ -16,10 +16,12 @@ import { Button } from '@folio/stripes-components/lib/Button';
 ## Props
 Name | Type | Description
 --- | --- | ---
-buttonStyle | string | Change the style/color of the button (see the [styles section](/?selectedKind=Button&selectedStory=Styles)) |
+buttonStyle | string | Change the style/color of the button |
 type | string | Change the button type |
 buttonClass | string | Add a custom class |
-hollow | bool | Converts to an outlined button (see the [styles section](/?selectedKind=Button&selectedStory=Styles)) |
+hollow | bool | Converts to an outlined button |
+icon | string | Adds an icon to the button |
+iconPlacement | string | Determine placement of icon (defaults to right) |
 align | string | Change the alignment of the button (with flexbox) Options: start, center, end |
 className | string | Replace CSS classes completely |
 bottomMargin0 | bool | Remove bottom margin |

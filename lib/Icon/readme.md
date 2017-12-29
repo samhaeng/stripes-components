@@ -20,3 +20,4 @@ size | string | Sets the icon size (small, medium, large) | medium |
 title | string | Text that appears in a browser-native tooltip when icon is hovered | |
 iconRootClass | string | applies a custom css class to the component's internal div. This is useful for applying custom hover interaction. | |
 iconClassName | string | applies a custom css class name directly to icon | stripes__icon |
+onlySvg | boolean | Returns SVG directly without any wrapper elements |  |

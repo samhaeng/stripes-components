@@ -5,7 +5,8 @@
 */
 
 .button {
-  padding: 3px 10px 7px;
+  /* padding: 3px 10px 7px; */
+  padding: 0 10px;
   height: 24px;
   text-align: center;
   -webkit-appearance: none;
@@ -20,12 +21,12 @@
   margin-left: 2px;
   margin-right: 2px;
   max-height: var(--controlHeight);
-  overflow: hidden;
   white-space: nowrap;
   line-height: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  vertical-align: top;
   text-decoration: none;
   outline: 0;
   box-shadow: 0 0 0 18px rgba(0, 0, 0, 0);
@@ -83,7 +84,7 @@
       background-color: transparent;
       color: var(--primary);
 
-      & :global .stripes__icon {
+      & .icon {
         fill: var(--primary);
       }
 
@@ -91,7 +92,7 @@
         background-color: color(var(--primary) shade(8%));
         color: #fff;
 
-        & :global .stripes__icon {
+        & .icon {
           fill: #fff;
         }
       }
@@ -121,7 +122,7 @@
       background-color: transparent;
       color: var(--secondary);
 
-      & :global .stripes__icon {
+      & .icon {
         fill: var(--secondary);
       }
 
@@ -129,7 +130,7 @@
         background-color: color(var(--secondary) shade(8%));
         color: #fff;
 
-        & :global .stripes__icon {
+        & .icon {
           fill: #fff;
         }
       }
@@ -159,7 +160,7 @@
       background-color: transparent;
       color: var(--success);
 
-      & :global .stripes__icon {
+      & .icon {
         fill: var(--success);
       }
 
@@ -167,7 +168,7 @@
         background-color: color(var(--success) shade(8%));
         color: #fff;
 
-        & :global .stripes__icon {
+        & .icon {
           fill: #fff;
         }
       }
@@ -197,7 +198,7 @@
       background-color: transparent;
       color: var(--warn);
 
-      & :global .stripes__icon {
+      & .icon {
         fill: var(--warn);
       }
 
@@ -205,7 +206,7 @@
         background-color: color(var(--warn) shade(8%));
         color: #fff;
 
-        & :global .stripes__icon {
+        & .icon {
           fill: #fff;
         }
       }
@@ -236,7 +237,7 @@
       background-color: transparent;
       color: var(--error);
 
-      & :global .stripes__icon {
+      & .icon {
         fill: var(--error);
       }
 
@@ -244,7 +245,7 @@
         background-color: color(var(--error) shade(8%));
         color: #fff;
 
-        & :global .stripes__icon {
+        & .icon {
           fill: #fff;
         }
       }
@@ -256,6 +257,9 @@
   */
 
   &.transparent {
+    & .icon {
+      fill: #555;
+    }
     &.hover {
       background-color: transparent;
       border: 1px solid transparent;
@@ -430,6 +434,31 @@
     font-size: 2rem;
     border-radius: 0;
   }
+}
+
+/**
+ * Label
+ */
+.label {
+  padding-top: 3px;
+  padding-bottom: 5px;
+}
+
+/**
+ * Icon
+ */
+.icon {
+  height: 16px;
+  width: 16px;
+  fill: #fff;
+}
+
+.iconRight {
+  margin-left: 4px;
+}
+
+.iconLeft {
+  margin-right: 4px;
 }
 
 [dir='rtl'] {

@@ -26,7 +26,8 @@ align | string | Change the alignment of the button (with flexbox) Options: star
 className | string | Replace CSS classes completely |
 bottomMargin0 | bool | Remove bottom margin |
 marginBottom0 | bool | Remove bottom margin |
-fullWidth | fullWidth | Forces the button width to 100% |
+fullWidth | bool | Forces the button width to 100% |
+marginNone | bool | Removes all margin from button |
 href | string | Returns an anchor-tag with an href-attribute |
 allowAnchorClick | bool | Allow anchor click |
 onClick | function | Adds an onClick handler |

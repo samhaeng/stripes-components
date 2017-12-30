@@ -444,6 +444,7 @@
  * Label
  */
 .label {
+  order: 2;
   padding-top: 3px;
   padding-bottom: 5px;
 }
@@ -458,11 +459,25 @@
 }
 
 .iconRight {
-  margin-left: 4px;
+  margin-left: 2px;
+  margin-right: -4px;
 }
 
 .iconLeft {
+  margin-right: 2px;
+  margin-left: -4px;
+}
+
+[dir='rtl'] .iconRight {
+  margin-left: 0;
   margin-right: 4px;
+  order: -5;
+}
+
+[dir='rtl'] .iconLeft {
+  margin-left: 4px;
+  margin-right: 0;
+  order: 10;
 }
 
 [dir='rtl'] {

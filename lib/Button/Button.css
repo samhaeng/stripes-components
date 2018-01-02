@@ -447,6 +447,7 @@
   order: 2;
   padding-top: 3px;
   padding-bottom: 5px;
+  display: flex;
 }
 
 /**
@@ -461,23 +462,25 @@
 .iconRight {
   margin-left: 2px;
   margin-right: -4px;
+  order: 3;
 }
 
 .iconLeft {
   margin-right: 2px;
   margin-left: -4px;
+  order: 0;
 }
 
 [dir='rtl'] .iconRight {
-  margin-left: 0;
-  margin-right: 4px;
-  order: -5;
+  margin-left: -4px;
+  margin-right: 2px;
+  order: 0;
 }
 
 [dir='rtl'] .iconLeft {
-  margin-left: 4px;
-  margin-right: 0;
-  order: 10;
+  margin-left: 2px;
+  margin-right: -4px;
+  order: initial;
 }
 
 [dir='rtl'] {

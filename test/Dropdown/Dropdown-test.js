@@ -245,4 +245,3 @@ describe('UncontrolledDropdown', () => {
     expect(wrapper.instance().props.onToggle.called).to.equal(true);
   });
 });
-

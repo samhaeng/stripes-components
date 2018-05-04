@@ -48,7 +48,7 @@
   /* Selected style */
   &.selected {
     color: #fff;
-    background-color: var(--color-current);
+    background-color: var(--color-fill-current);
 
     /** For universal interaction styling */
     &::after {

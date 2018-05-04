@@ -4,9 +4,10 @@
   --color-border: rgba(0, 0, 0, 0.2);
   --color-border-p2: rgba(0, 0, 0, 0.1);
   --color-icon: rgba(0, 0, 0, 0.3);
-  --color-current: rgba(0, 0, 0, 0.62);
   --color-link: var(--primary);
   --color-link-visited: #4f2bbb;
+  --color-fill-current: rgba(0, 0, 0, 0.62);
+  --color-fill-disabled: rgba(0, 0, 0, 0.05);
   --bg: #fcfcfc;
   --bgHover: color(var(--bg) contrast(100%) blend(var(--bg) 90%));
   --primary: #2b75bb;

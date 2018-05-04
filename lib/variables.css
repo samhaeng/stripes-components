@@ -6,6 +6,7 @@
   --color-icon: rgba(0, 0, 0, 0.3);
   --color-link: var(--primary);
   --color-link-visited: #4f2bbb;
+  --color-fill: rgba(0, 0, 0, 0.03);
   --color-fill-current: rgba(0, 0, 0, 0.62);
   --color-fill-disabled: rgba(0, 0, 0, 0.05);
   --bg: #fcfcfc;

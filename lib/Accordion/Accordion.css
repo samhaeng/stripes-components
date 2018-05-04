@@ -64,6 +64,7 @@
   flex-grow: 2;
   font-weight: 600;
   justify-content: flex-start;
+  color: var(--color-text-p2);
 }
 
 /**
@@ -111,7 +112,7 @@
   font-size: 18px;
   min-height: 44px;
   width: 100%;
-  color: var(--color-text-p2);
+  color: var(--color-text);
 
   &:hover,
   &:focus {
@@ -140,6 +141,7 @@
   font-size: inherit;
   padding: 0;
   width: 100%;
+  color: var(--color-text-p2);
 
   &:focus {
     outline: none;
@@ -153,7 +155,7 @@
 
 .filterSetlabel {
   font-weight: 600;
-  color: #000;
+  color: var(--color-text-p2);
   pointer-events: none;
   user-select: none;
 }

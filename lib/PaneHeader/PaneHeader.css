@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--minor-divider-color);
+  border-bottom: 1px solid var(--border-color-p2);
   min-height: 45px;
   position: relative;
   will-change: transform;
@@ -71,11 +71,12 @@
 
 .paneTitleLabel {
   margin: 0 4px;
+  outline: 0;
 }
 
 /* Pane sub */
 .paneSub {
-  color: var(--subLabelColor);
+  color: var(--text-color-p2);
   font-size: 11px;
 }
 

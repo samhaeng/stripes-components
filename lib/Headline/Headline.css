@@ -11,6 +11,7 @@
 .headline {
   margin-top: 0;
   color: var(--color-text);
+  font-weight: var(--text-weight-headline);
 
   /* Faded */
   &.isFaded {

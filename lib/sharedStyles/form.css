@@ -22,7 +22,7 @@
 .label {
   display: block;
   margin-bottom: 6px;
-  color: #000;
+  color: var(--color-text);
 
   &.required::after {
     content: '(required)';

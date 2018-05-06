@@ -42,7 +42,7 @@
 
   /* Different bg on odd rows */
   &.isOdd:not(.selected) {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--color-fill);
   }
 
   /* Selected style */

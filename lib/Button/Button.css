@@ -134,9 +134,10 @@
     text-align: left;
     margin: 0;
     background-color: transparent;
-    border: 1px solid transparent;
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
     &:hover,
     &:focus {

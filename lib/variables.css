@@ -26,7 +26,8 @@
   --control-margin-bottom: 1rem;
   --radius: 6px;
   --gutter: 1rem;
-  --input-horizontal-padding: 0.5rem;
+  --ui-default-horizontal-padding: calc(var(--gutter) / 2);
+  --input-horizontal-padding: var(--ui-default-horizontal-padding);
   --input-vertical-padding: 0.125rem;
 
   /**

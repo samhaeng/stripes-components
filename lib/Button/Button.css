@@ -12,11 +12,11 @@
 
 .button {
   composes: interactionStyles from "../sharedStyles/interactionStyles.css";
-  padding: 0.125rem 1rem;
+  padding: 0.125rem var(--ui-default-horizontal-padding);
   text-align: center;
   -webkit-appearance: none;
   cursor: pointer;
-  color: #555;
+  color: var(--color-text);
   border-radius: var(--radius);
   transition: background-color 0.25s, color 0.25s, opacity 0.07s;
   background-color: transparent;
@@ -132,16 +132,14 @@
 
   &.dropdownItem {
     text-align: left;
-    margin-bottom: 0;
+    margin: 0;
     background-color: transparent;
     border: 1px solid transparent;
     width: 100%;
     display: block;
-    color: #555;
 
     &:hover,
     &:focus {
-      background-color: var(--bg-hover);
       outline: none;
     }
   }

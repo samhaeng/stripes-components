@@ -1,0 +1,5 @@
+@import "../variables.css";
+
+.listRoot {
+  margin: 0 calc(var(--ui-default-horizontal-padding) * -1);
+}

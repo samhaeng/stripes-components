@@ -37,7 +37,7 @@
     display: block;
   }
 
-  & + .button {
+  & + .button:not(.dropdownItem) {
     margin-left: 0.25rem;
   }
 
@@ -125,21 +125,6 @@
       border: 1px solid var(--danger);
     }
 
-    &:focus {
-      outline: none;
-    }
-  }
-
-  &.dropdownItem {
-    text-align: left;
-    margin: 0;
-    background-color: transparent;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    &:hover,
     &:focus {
       outline: none;
     }
@@ -243,8 +228,32 @@
   }
 }
 
+/**
+ * Dropdown Menu Item
+ */
+.dropdownItem {
+  composes: interactionStyles boxOffsetStartMedium boxOffsetEndMedium from "../sharedStyles/interactionStyles.css";
+  text-align: left;
+  margin: 0;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.125rem 0;
+  margin: 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+/**
+ * RTL
+ */
 [dir="rtl"] {
-  & .button {
+  & .button:not(.dropdownItem) {
     & + .button {
       margin-left: 0;
       margin-right: 0.25rem;

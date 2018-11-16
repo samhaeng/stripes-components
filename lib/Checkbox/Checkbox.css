@@ -41,8 +41,8 @@
 }
 
 .checkboxLabel {
-  composes: interactionStyles from "../sharedStyles/interactionStyles.css";
-  padding: var(--input-vertical-padding) var(--input-horizontal-padding);
+  composes: interactionStyles boxOffsetStartMedium boxOffsetEndMedium from "../sharedStyles/interactionStyles.css";
+  padding: var(--input-vertical-padding) 0;
   display: flex;
   align-items: baseline;
   cursor: pointer;

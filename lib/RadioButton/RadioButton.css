@@ -22,8 +22,8 @@
 }
 
 .radioLabel {
-  composes: interactionStyles from "../sharedStyles/interactionStyles.css";
-  padding: var(--input-vertical-padding) var(--input-horizontal-padding);
+  composes: interactionStyles boxOffsetStartMedium boxOffsetEndMedium from "../sharedStyles/interactionStyles.css";
+  padding: var(--input-vertical-padding) 0;
   position: relative;
   line-height: var(--line-height);
   display: flex;

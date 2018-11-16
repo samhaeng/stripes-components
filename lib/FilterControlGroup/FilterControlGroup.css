@@ -1,9 +1,9 @@
 @import "../variables";
 
 .filterList {
-  margin: -0.5em 0 0 -1em;
   padding: 0;
   border-radius: var(--radius);
+  margin-left: var(--gutter);
 }
 
 .listTopLabel {

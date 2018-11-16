@@ -72,7 +72,7 @@
 .content {
   max-height: 0; /* hidden */
   overflow: hidden;
-  margin: 0.5em 0 1em 1.5em;
+  margin: 0 0 var(--gutter) 0;
   transition: max-height 0.25s ease;
 
   &.expanded {
@@ -100,7 +100,12 @@
 .headerDefaultContentRight {
   flex-grow: 2;
   flex-shrink: 0;
-  padding: 0 4px;
+  padding-left: var(--gutter);
+}
+
+[dir="rtl"] .headerDefaultContentRight {
+  padding-left: 0;
+  padding-right: var(--gutter);
 }
 
 .defaultCollapseButton {
@@ -110,10 +115,18 @@
   outline: none;
   display: flex;
   align-items: center;
-  padding: calc(var(--input-vertical-padding) * 4) var(--input-horizontal-padding);
+  padding: var(--gutter-one-third) 0;
   background-color: transparent;
   width: 100%;
   color: var(--color-text);
+
+  & .labelArea {
+    padding: 0 var(--gutter-one-third);
+  }
+
+  & .headerInner {
+    padding: var(--gutter-one-third) 0;
+  }
 
   &:hover,
   &:focus {
@@ -122,7 +135,7 @@
 }
 
 .headerInner {
-  composes: interactionStyles from "../sharedStyles/interactionStyles.css";
+  composes: interactionStyles boxOffsetStartSmall boxOffsetEndSmall from "../sharedStyles/interactionStyles.css";
   width: 100%;
   display: flex;
   align-items: center;
@@ -156,7 +169,6 @@
 
 .defaultHeaderIcon {
   color: var(--color-icon);
-  padding: 0.25em;
 }
 
 .filterSetHeaderIcon {

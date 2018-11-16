@@ -17,8 +17,8 @@
   &:after {
     content: '';
     position: absolute;
-    right: -10px;
-    left: -10px;
+    right: calc(var(--gutter-two-thirds) * -1);
+    left: calc(var(--gutter-two-thirds) * -1);
     top: 0;
     bottom: 0;
     z-index: -1;

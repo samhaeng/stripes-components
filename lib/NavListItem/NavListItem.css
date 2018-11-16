@@ -31,7 +31,6 @@
   }
 
   &.isActive {
-    background-color: var(--color-fill-current);
     color: #fff;
     text-decoration: none;
 
@@ -41,8 +40,13 @@
       color: #fff;
     }
 
-    /* Custom universal interaction styling */
+    /* Active style applied to after element */
     &::after {
+      background-color: var(--color-fill-current);
+    }
+
+    /* Custom universal interaction styling */
+    & .NavListItemInner::after {
       background-color: #fff;
     }
   }

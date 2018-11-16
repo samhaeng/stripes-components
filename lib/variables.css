@@ -26,10 +26,9 @@
   --control-margin-bottom: 1rem;
   --radius: 6px;
   --gutter: 15px;
-  --gutter-two-thirds: 10px;
-  --gutter-one-third: 5px;
-  --ui-default-horizontal-padding: var(--gutter-two-thirds);
-  --input-horizontal-padding: var(--ui-default-horizontal-padding);
+  --gutter-one-third: calc(var(--gutter) / 3);
+  --gutter-two-thirds: calc(var(--gutter-one-third) * 2);
+  --input-horizontal-padding: var(--gutter-two-thirds);
   --input-vertical-padding: 0.125rem;
 
   /**

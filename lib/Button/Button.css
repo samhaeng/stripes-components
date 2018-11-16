@@ -12,7 +12,7 @@
 
 .button {
   composes: interactionStyles from "../sharedStyles/interactionStyles.css";
-  padding: 0.125rem var(--ui-default-horizontal-padding);
+  padding: 0.125rem var(--input-horizontal-padding);
   text-align: center;
   -webkit-appearance: none;
   cursor: pointer;
@@ -32,6 +32,14 @@
   opacity: 1;
   font-weight: var(--text-weight-button);
   font-size: var(--font-size-small);
+
+  /* Interaction styles related */
+  &::before {
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+  }
 
   &.block {
     display: block;

@@ -4,16 +4,26 @@
 @import '../variables.css';
 
 .NavListItem {
-  composes: interactionStyles from "../sharedStyles/interactionStyles.css";
+  composes: interactionStylesControl from "../sharedStyles/interactionStyles.css";
   display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0.3rem var(--ui-default-horizontal-padding);
-  min-height: 24px;
   color: var(--body-color);
   border-radius: var(--radius);
   text-align: left;
+  width: 100%;
   outline: 0;
+  position: relative;
+
+  /* For stripped odd colors */
+  &:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: var(--radius);
+  }
 
   /* for anchor tags */
   &:visited {
@@ -39,11 +49,16 @@
 }
 
 .NavListItemInner {
+  composes: interactionStyles boxOffsetStartMedium boxOffsetEndMedium hasDot focusDotPositionStart focusDotOffsetSmall from "../sharedStyles/interactionStyles.css";
   display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.3rem 0;
+  min-height: 24px;
 }
 
 /* if stripped styles is activated in NavList */
-.stripped .NavListItem:nth-child(odd):not(.isActive):not(:hover):not(:active),
-.NavListItem.odd:not(.isActive):not(:hover):not(:active) {
+.stripped .NavListItem:nth-child(odd):not(.isActive):not(:active):after,
+.NavListItem.odd:not(.isActive):not(:active):after {
   background-color: var(--color-fill-table-row-odd);
 }

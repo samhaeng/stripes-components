@@ -245,11 +245,13 @@
  */
 
 /* No margin on dropdownItem's */
-.button.dropdownItem {
+.button.dropdownItem,
+.button.navItem {
   margin: 0;
 }
 
-.dropdownItem {
+.dropdownItem,
+.navItem {
   composes: interactionStyles boxOffsetStartMedium boxOffsetEndMedium from "../sharedStyles/interactionStyles.css";
   padding: 0.125rem 0;
   background-color: transparent;

@@ -4,18 +4,35 @@
 @import '../variables.css';
 
 .NavListItem {
+  position: relative;
+
   &.isActive {
-    background-color: var(--color-fill-current);
     color: #fff;
   }
 }
 
 .NavListItemInner {
   display: flex;
+  width: 100%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    border-radius: var(--radius);
+    z-index: -1;
+  }
+}
+
+.isActive .NavListItemInner:after {
+  background-color: var(--color-fill-current);
 }
 
 /* if stripped styles is activated in NavList */
-.stripped .NavListItem:nth-child(odd):not(.isActive):not(:hover):not(:active),
-.NavListItem.odd:not(.isActive):not(:hover):not(:active) {
+.stripped .NavListItem:nth-child(odd):not(.isActive):not(:hover):not(:active) .NavListItemInner:after,
+.NavListItem.odd:not(.isActive):not(:hover):not(:active) .NavListItemInner:after {
   background-color: var(--color-fill-table-row-odd);
 }

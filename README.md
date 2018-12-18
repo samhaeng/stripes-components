@@ -105,7 +105,6 @@ Component | doc | categories
 [`<Selection>`](lib/Selection) | [doc](lib/Selection/readme.md) | control
 [`<Settings>`](lib/Settings) | [doc](lib/Settings/readme.md) | prefab
 [`<SRStatus>`](lib/SRStatus) | [doc](lib/SRStatus/readme.md) | accessibility, user-feedback
-[`<TabButton>`](lib/TabButton) | | control
 [`<TextArea>`](lib/TextArea) | | control
 [`<TextField>`](lib/TextField) | [doc](lib/TextField/readme.md) | control
 [`<Timepicker>`](lib/Timepicker) | [doc](lib/Timepicker/readme.md) | control

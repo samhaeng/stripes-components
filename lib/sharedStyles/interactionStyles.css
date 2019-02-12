@@ -35,8 +35,8 @@
   opacity: 0.5;
   cursor: default;
 
-  &::after,
-  &::before {
+  &::before,
+  &::after {
     display: none;
   }
 }
@@ -44,7 +44,7 @@
 /**
  * Focus/active pseudo element
  */
-.interactionStyles::before {
+.interactionStyles::after {
   content: "";
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@
 /**
  * Focus Dot pseudo element
  */
-.interactionStyles::after {
+.interactionStyles::before {
   content: "";
   opacity: 0;
   visibility: hidden;
@@ -75,36 +75,36 @@
 }
 
 /* Focus dot start */
-:not([dir="rtl"]) .interactionStyles.focusDotPositionStart::after {
+:not([dir="rtl"]) .interactionStyles.focusDotPositionStart::before {
   left: var(--focus-dot-offset-default);
   top: 50%;
 }
 
-[dir="rtl"] .interactionStyles.focusDotPositionStart::after {
+[dir="rtl"] .interactionStyles.focusDotPositionStart::before {
   right: var(--focus-dot-offset-default);
   top: 50%;
 }
 
 /* Focus dot end */
-:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd::after {
+:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd::before {
   right: var(--focus-dot-offset-default);
   top: 50%;
 }
 
-[dir="rtl"] .interactionStyles.focusDotPositionEnd::after {
+[dir="rtl"] .interactionStyles.focusDotPositionEnd::before {
   left: var(--focus-dot-offset-default);
   top: 50%;
 }
 
 /* Focus dot top */
-.interactionStyles.focusDotPositionTop::after {
+.interactionStyles.focusDotPositionTop::before {
   top: var(--focus-dot-offset-default);
   transform: translateX(-50%) scale(1);
   left: 50%;
 }
 
 /* Focus dot bottom */
-.interactionStyles.focusDotPositionBottom::after {
+.interactionStyles.focusDotPositionBottom::before {
   bottom: var(--focus-dot-offset-default);
   transform: translateX(-50%) scale(1);
   left: 50%;
@@ -115,42 +115,42 @@
  */
 
 /* small focus dot offset */
-:not([dir="rtl"]) .interactionStyles.focusDotPositionStart.focusDotOffsetSmall::after { left: var(--focus-dot-offset-small); }
-[dir="rtl"] .interactionStyles.focusDotPositionStart.focusDotOffsetSmall::after { right: var(--focus-dot-offset-small); }
+:not([dir="rtl"]) .interactionStyles.focusDotPositionStart.focusDotOffsetSmall::before { left: var(--focus-dot-offset-small); }
+[dir="rtl"] .interactionStyles.focusDotPositionStart.focusDotOffsetSmall::before { right: var(--focus-dot-offset-small); }
 
-:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd.focusDotOffsetSmall::after { right: var(--focus-dot-offset-small); }
-[dir="rtl"] .interactionStyles.focusDotPositionEnd.focusDotOffsetSmall::after { left: var(--focus-dot-offset-small); }
+:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd.focusDotOffsetSmall::before { right: var(--focus-dot-offset-small); }
+[dir="rtl"] .interactionStyles.focusDotPositionEnd.focusDotOffsetSmall::before { left: var(--focus-dot-offset-small); }
 
-.interactionStyles.focusDotPositionTop.focusDotOffsetSmall::after { top: var(--focus-dot-offset-small); }
-.interactionStyles.focusDotPositionBottom.focusDotOffsetSmall::after { bottom: var(--focus-dot-offset-small); }
+.interactionStyles.focusDotPositionTop.focusDotOffsetSmall::before { top: var(--focus-dot-offset-small); }
+.interactionStyles.focusDotPositionBottom.focusDotOffsetSmall::before { bottom: var(--focus-dot-offset-small); }
 
 /* medium focus dot offset */
-:not([dir="rtl"]) .interactionStyles.focusDotPositionStart.focusDotOffsetMedium::after { left: var(--focus-dot-offset-medium); }
-[dir="rtl"] .interactionStyles.focusDotPositionStart.focusDotOffsetMedium::after { right: var(--focus-dot-offset-medium); }
+:not([dir="rtl"]) .interactionStyles.focusDotPositionStart.focusDotOffsetMedium::before { left: var(--focus-dot-offset-medium); }
+[dir="rtl"] .interactionStyles.focusDotPositionStart.focusDotOffsetMedium::before { right: var(--focus-dot-offset-medium); }
 
-:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd.focusDotOffsetMedium::after { right: var(--focus-dot-offset-medium); }
-[dir="rtl"] .interactionStyles.focusDotPositionEnd.focusDotOffsetMedium::after { left: var(--focus-dot-offset-medium); }
+:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd.focusDotOffsetMedium::before { right: var(--focus-dot-offset-medium); }
+[dir="rtl"] .interactionStyles.focusDotPositionEnd.focusDotOffsetMedium::before { left: var(--focus-dot-offset-medium); }
 
-.interactionStyles.focusDotPositionTop.focusDotOffsetMedium::after { top: var(--focus-dot-offset-medium); }
-.interactionStyles.focusDotPositionBottom.focusDotOffsetMedium::after { bottom: var(--focus-dot-offset-medium); }
+.interactionStyles.focusDotPositionTop.focusDotOffsetMedium::before { top: var(--focus-dot-offset-medium); }
+.interactionStyles.focusDotPositionBottom.focusDotOffsetMedium::before { bottom: var(--focus-dot-offset-medium); }
 
 /* large focus dot offset */
-:not([dir="rtl"]) .interactionStyles.focusDotPositionStart.focusDotOffsetLarge::after { left: var(--focus-dot-offset-large); }
-[dir="rtl"] .interactionStyles.focusDotPositionStart.focusDotOffsetLarge::after { right: var(--focus-dot-offset-large); }
+:not([dir="rtl"]) .interactionStyles.focusDotPositionStart.focusDotOffsetLarge::before { left: var(--focus-dot-offset-large); }
+[dir="rtl"] .interactionStyles.focusDotPositionStart.focusDotOffsetLarge::before { right: var(--focus-dot-offset-large); }
 
-:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd.focusDotOffsetLarge::after { right: var(--focus-dot-offset-large); }
-[dir="rtl"] .interactionStyles.focusDotPositionEnd.focusDotOffsetLarge::after { left: var(--focus-dot-offset-large); }
+:not([dir="rtl"]) .interactionStyles.focusDotPositionEnd.focusDotOffsetLarge::before { right: var(--focus-dot-offset-large); }
+[dir="rtl"] .interactionStyles.focusDotPositionEnd.focusDotOffsetLarge::before { left: var(--focus-dot-offset-large); }
 
-.interactionStyles.focusDotPositionTop.focusDotOffsetLarge::after { top: var(--focus-dot-offset-large); }
-.interactionStyles.focusDotPositionBottom.focusDotOffsetLarge::after { bottom: var(--focus-dot-offset-large); }
+.interactionStyles.focusDotPositionTop.focusDotOffsetLarge::before { top: var(--focus-dot-offset-large); }
+.interactionStyles.focusDotPositionBottom.focusDotOffsetLarge::before { bottom: var(--focus-dot-offset-large); }
 
 /**
  * Hover
  */
 
-.isHovered::before,
-.interactionStylesControl:hover > .interactionStyles::before,
-.interactionStyles:hover::before {
+.isHovered::after,
+.interactionStylesControl:hover > .interactionStyles::after,
+.interactionStyles:hover::after {
   background: var(--color-fill-hover);
 }
 
@@ -161,17 +161,17 @@
 /**
  * Focus
  */
-.isFocused::before,
-.interactionStylesControl:focus > .interactionStyles::before,
-.interactionStyles:focus::before {
+.isFocused::after,
+.interactionStylesControl:focus > .interactionStyles::after,
+.interactionStyles:focus::after {
   background: var(--color-fill-focus);
   border: 1px solid var(--color-border);
   box-shadow: 0 0 0 3px var(--color-fill-focus);
 }
 
-.isFocused.hasDot::after,
-.interactionStylesControl:focus > .interactionStyles.hasDot::after,
-.interactionStyles.hasDot:focus::after {
+.isFocused.hasDot::before,
+.interactionStylesControl:focus > .interactionStyles.hasDot::before,
+.interactionStyles.hasDot:focus::before {
   visibility: visible;
   opacity: 1;
 }
@@ -187,17 +187,17 @@
   & svg { fill: #fff; }
 }
 
-.isActive::before,
-.interactionStylesControl:active > .interactionStyles::before,
-.interactionStyles:active::before {
+.isActive::after,
+.interactionStylesControl:active > .interactionStyles::after,
+.interactionStyles:active::after {
   background: var(--color-fill-active);
   border: 1px solid var(--color-border);
   color: #fff;
 }
 
-.interactionStyles.hasDot.isActive:active::after,
-.interactionStylesControl:active > .interactionStyles.hasDot::after,
-.interactionStyles.hasDot:active::after {
+.interactionStyles.hasDot.isActive:active::before,
+.interactionStylesControl:active > .interactionStyles.hasDot::before,
+.interactionStyles.hasDot:active::before {
   background-color: #fff;
   visibility: visible;
   opacity: 1;
@@ -208,21 +208,21 @@
  */
 
 /* Apply to all sides */
-.interactionStyles.boxOffsetSmall::before {
+.interactionStyles.boxOffsetSmall::after {
   left: var(--box-offset-small);
   right: var(--box-offset-small);
   top: var(--box-offset-small);
   bottom: var(--box-offset-small);
 }
 
-.interactionStyles.boxOffsetMedium::before {
+.interactionStyles.boxOffsetMedium::after {
   left: var(--box-offset-medium);
   right: var(--box-offset-medium);
   top: var(--box-offset-medium);
   bottom: var(--box-offset-medium);
 }
 
-.interactionStyles.boxOffsetLarge::before {
+.interactionStyles.boxOffsetLarge::after {
   left: var(--box-offset-large);
   right: var(--box-offset-large);
   top: var(--box-offset-large);
@@ -230,31 +230,31 @@
 }
 
 /* Apply to start only */
-:not([dir="rtl"]) .interactionStyles.boxOffsetStartSmall::before { left: var(--box-offset-small); }
-[dir="rtl"] .interactionStyles.boxOffsetStartSmall::before { right: var(--box-offset-small); }
+:not([dir="rtl"]) .interactionStyles.boxOffsetStartSmall::after { left: var(--box-offset-small); }
+[dir="rtl"] .interactionStyles.boxOffsetStartSmall::after { right: var(--box-offset-small); }
 
-:not([dir="rtl"]) .interactionStyles.boxOffsetStartMedium::before { left: var(--box-offset-medium); }
-[dir="rtl"] .interactionStyles.boxOffsetStartMedium::before { right: var(--box-offset-medium); }
+:not([dir="rtl"]) .interactionStyles.boxOffsetStartMedium::after { left: var(--box-offset-medium); }
+[dir="rtl"] .interactionStyles.boxOffsetStartMedium::after { right: var(--box-offset-medium); }
 
-:not([dir="rtl"]) .interactionStyles.boxOffsetStartLarge::before { left: var(--box-offset-large); }
-[dir="rtl"] .interactionStyles.boxOffsetStartLarge::before { right: var(--box-offset-large); }
+:not([dir="rtl"]) .interactionStyles.boxOffsetStartLarge::after { left: var(--box-offset-large); }
+[dir="rtl"] .interactionStyles.boxOffsetStartLarge::after { right: var(--box-offset-large); }
 
 /* Apply to end only */
-:not([dir="rtl"]) .interactionStyles.boxOffsetEndSmall::before { right: var(--box-offset-small); }
-[dir="rtl"] .interactionStyles.boxOffsetEndSmall::before { left: var(--box-offset-small); }
+:not([dir="rtl"]) .interactionStyles.boxOffsetEndSmall::after { right: var(--box-offset-small); }
+[dir="rtl"] .interactionStyles.boxOffsetEndSmall::after { left: var(--box-offset-small); }
 
-:not([dir="rtl"]) .interactionStyles.boxOffsetEndMedium::before { right: var(--box-offset-medium); }
-[dir="rtl"] .interactionStyles.boxOffsetEndMedium::before { left: var(--box-offset-medium); }
+:not([dir="rtl"]) .interactionStyles.boxOffsetEndMedium::after { right: var(--box-offset-medium); }
+[dir="rtl"] .interactionStyles.boxOffsetEndMedium::after { left: var(--box-offset-medium); }
 
-:not([dir="rtl"]) .interactionStyles.boxOffsetEndLarge::before { right: var(--box-offset-large); }
-[dir="rtl"] .interactionStyles.boxOffsetEndLarge::before { left: var(--box-offset-large); }
+:not([dir="rtl"]) .interactionStyles.boxOffsetEndLarge::after { right: var(--box-offset-large); }
+[dir="rtl"] .interactionStyles.boxOffsetEndLarge::after { left: var(--box-offset-large); }
 
 /* Apply to top only */
-.interactionStyles.boxOffsetTopSmall::before { top: var(--box-offset-small); }
-.interactionStyles.boxOffsetTopMedium::before { top: var(--box-offset-medium); }
-.interactionStyles.boxOffsetTopLarge::before { top: var(--box-offset-large); }
+.interactionStyles.boxOffsetTopSmall::after { top: var(--box-offset-small); }
+.interactionStyles.boxOffsetTopMedium::after { top: var(--box-offset-medium); }
+.interactionStyles.boxOffsetTopLarge::after { top: var(--box-offset-large); }
 
 /* Apply to bottom only */
-.interactionStyles.boxOffsetBottomSmall::before { bottom: var(--box-offset-small); }
-.interactionStyles.boxOffsetBottomMedium::before { bottom: var(--box-offset-medium); }
-.interactionStyles.boxOffsetBottomLarge::before { bottom: var(--box-offset-large); }
+.interactionStyles.boxOffsetBottomSmall::after { bottom: var(--box-offset-small); }
+.interactionStyles.boxOffsetBottomMedium::after { bottom: var(--box-offset-medium); }
+.interactionStyles.boxOffsetBottomLarge::after { bottom: var(--box-offset-large); }

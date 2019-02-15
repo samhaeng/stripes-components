@@ -242,6 +242,15 @@
 }
 
 /**
+ * Inner
+ */
+.buttonInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
  * Dropdown Item style
  */
 

@@ -66,7 +66,7 @@
 .stripped .NavListItem:nth-child(odd):not(.isActive):not(:hover):not(:active),
 .NavListItem.odd:not(.isActive):not(:hover):not(:active) {
   & .NavListItemInner::after {
-    background-color: var(--color-fill-table-row-odd);
+    background-color: var(--color-fill-row-odd);
   }
 }
 /* stylelint-enable */

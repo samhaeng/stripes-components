@@ -41,7 +41,7 @@
 
   /* Different bg on odd rows */
   &.mclIsOdd:not(.mclSelected) {
-    background-color: var(--color-fill-table-row-odd);
+    background-color: var(--color-fill-mcl-row-odd);
   }
 
   /* Selected style */

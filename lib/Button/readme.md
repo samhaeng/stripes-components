@@ -47,7 +47,7 @@ Complete list of button colors and styles:
 - link
 - paneHeaderNewButton
 
-You can combine some of the styles if needed:
+You can combine some styles like so:
 ```js
 <Button buttonStyle="danger mega">
     Delete
@@ -57,7 +57,7 @@ You can combine some of the styles if needed:
 ### Colors
 The color of the button can be modified by changing the `buttonStyle`-prop
 
-```
+```js
 <Button buttonStyle="danger">
     Do something dangerous
 </Button>
@@ -74,7 +74,7 @@ warning | string | |
 ### dropdownItem
 The `dropdownItem` buttonStyle is useful for adding a list of buttons inside of dropdown menus.
 
-```
+```js
 <Button buttonStyle="dropdownItem">
     <Icon icon="duplicate">Duplicate</Icon>
 </Button>

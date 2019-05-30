@@ -27,6 +27,7 @@
   font-weight: var(--text-weight-button);
   font-size: var(--font-size-medium);
   min-height: var(--control-min-size-desktop);
+  vertical-align: top;
 
   /* Minor update to avoid a small gap between
     the button and the focus/active styles */
@@ -69,10 +70,6 @@
     background-color: transparent;
     border: 1px solid var(--primary);
     color: var(--primary);
-
-    & :global .stripes__icon {
-      fill: var(--primary);
-    }
   }
 
   /**

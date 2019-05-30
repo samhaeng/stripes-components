@@ -16,7 +16,7 @@ import { Button } from '@folio/stripes/components';
 ## Props
 Name | Type | Description
 --- | --- | ---
-buttonStyle | string | Change the style/color of the button (see the [styles section](/?selectedKind=Button&selectedStory=Styles)) |
+buttonStyle | string | Change the style/color of the button. |
 type | string | Change the button type |
 buttonClass | string | Add a custom class |
 align | string | Change the alignment of the button (with flexbox) Options: start, center, end |
@@ -35,8 +35,24 @@ buttonRef | string | Adds ref-attribute |
 autoFocus | bool | If this prop is `true`, component will automatically focus on mount | |
 
 ## Styles
+Complete list of button colors and styles:
+- primary
+- danger
+- success
+- warning
+- secondary
+- dropdownItem
+- mega
+- slim
+- link
+- paneHeaderNewButton
 
-Complete list of button colors and styles
+You can combine some of the styles if needed:
+```js
+<Button buttonStyle="danger mega">
+    Delete
+</Button>
+```
 
 ### Colors
 The color of the button can be modified by changing the `buttonStyle`-prop

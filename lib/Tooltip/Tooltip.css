@@ -7,9 +7,9 @@
 .tooltip {
   background-color: #000;
   color: #FFF;
-  margin-top: 5px;
-  border-radius: 3px;
-  padding: 4px 8px;
+  margin-top: var(--gutter-static-one-third);
+  border-radius: 4px;
+  padding: var(--gutter-static-one-third) var(--gutter-static-two-thirds);
   text-align: center;
 }
 

@@ -5,6 +5,10 @@
 @import "../variables";
 
 .tooltip {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 36px;
   background-color: #000;
   color: #FFF;
   margin-top: var(--gutter-static-one-third);

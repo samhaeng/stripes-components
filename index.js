@@ -15,6 +15,7 @@ export { default as SegmentedControl } from './lib/SegmentedControl';
 export { default as Select } from './lib/Select';
 export { default as TextArea } from './lib/TextArea';
 export { default as TextField } from './lib/TextField';
+export { default as Tooltip } from './lib/Tooltip';
 export { default as Timepicker } from './lib/Timepicker';
 export { default as Editor } from './lib/Editor';
 export { default as MultiSelection } from './lib/MultiSelection';

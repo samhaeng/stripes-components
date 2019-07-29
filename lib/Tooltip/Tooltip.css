@@ -10,16 +10,16 @@
   flex-direction: column;
   min-height: 36px;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   margin-top: var(--gutter-static-one-third);
   border-radius: 4px;
   padding: var(--gutter-static-one-third) var(--gutter-static-two-thirds);
   text-align: center;
   opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 0.1s;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.1s;
 }
 
 .label {
@@ -31,10 +31,11 @@
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
